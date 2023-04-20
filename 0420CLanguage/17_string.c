@@ -10,22 +10,22 @@ int myStrlen(char str[]);
 
 int main()
 {
-	//string();
+	string();
 	{
-		//char str[100] = "hello C language";
+		char str[100] = "hello C language";
 
-		//printf("strlen : %d\n", strlen(str)); // 문자열의 길이 출력 (NULL 은 포함 안됨)
+		printf("strlen : %d\n", strlen(str)); // 문자열의 길이 출력 (NULL 은 포함 안됨)
 
-		//char str1[20];
-		//printf("strcpy : %s\n", strcpy(str1, str)); // 복사
+		char str1[20];
+		printf("strcpy : %s\n", strcpy(str1, str)); // 복사
 
-		//str[0] = 'z';
-		//printf("strcmp : %d\n", strcmp(str, str1)); // 비교
+		str[0] = 'z';
+		printf("strcmp : %d\n", strcmp(str, str1)); // 비교
 		/*str1 < str2 인 경우에는 음수 반환
 		str1 > str2 인 경우에는 양수 반환
 		str1 == str2 인 경우에는 0을 반환 합니다.*/
 
-		//printf("strcat : %s\n", strcat(str, str1)); // 2개 병합
+		printf("strcat : %s\n", strcat(str, str1)); // 2개 병합
 
 		// ---> homework : string.h 라이브러리 없이 위의 기능을 똑같이 하는 함수 만들기
 	}
