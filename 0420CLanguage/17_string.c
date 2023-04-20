@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS // strcpy 보안문제 해결
 #include <stdio.h>
-//#include <string.h> // --> 문자열 사용하기 위한 라이브러리
+#include <string.h> // --> 문자열 사용하기 위한 라이브러리
 
 
 
