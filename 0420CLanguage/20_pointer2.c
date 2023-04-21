@@ -224,5 +224,6 @@ void void_pointer()
 	int* p0 = (int*)vp; // 동적할당에 사용
 }
 
-// homework 5*5 빙고 3줄이면 승리 만들기
+// homework 2차원 배열 사용해서
+// 5*5 빙고 3줄이면 승리 만들기 
 // 달팽이 배열 만들기
