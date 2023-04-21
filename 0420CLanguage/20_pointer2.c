@@ -14,9 +14,9 @@ int main()
 	// pointer_arr();
 	// pointer_operation();
 	// string_pointer();
-	// pointer_arr_and_2d_arr();
+	pointer_arr_and_2d_arr();
 	// pointer_and_const_arr();
-	void_pointer();
+	// void_pointer();
 
 	return 0;
 }
@@ -113,9 +113,10 @@ void pointer_arr_and_2d_arr()
 
 	printf("&a[0][0] : 0x%p\n", arr); // 배열의 이름 = 첫번째 주소
 	printf("&a[0][0] : 0x%p\n", arr[0]); // 0행의 이름
+	printf("&a[0][0] : 0x%p\n", &arr); // 배열의 첫 주소
 	printf("\n");
 
-	printf("&a[0][0] : 0x%p\n", *arr); // 첫 행의 주소
+	printf("&a[0][0] : 0x%p\n", *arr); // 첫 행의 주소   역참조 한번 ---> 행 표현
 	printf("&a[0][0] : 0x%p\n", &arr[0]); // 첫 행의 주소
 	printf("&a[0][0] : 0x%p\n", &arr[0][0]); // 첫 행 첫 열의 주소
 	printf("\n");
