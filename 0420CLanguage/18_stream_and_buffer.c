@@ -18,7 +18,7 @@ int main()
 
 	scanf_s("%s", words, sizeof(words)); // 버퍼엔 hello world 저장
 
-	printf("%s\n", words); // hello world 입력 -> hello 출력 --> 공백문자를 NULL로 인식
+	printf("%s\n", words); // hello world 입력 -> hello 출력 --> scanf는 공백문자를 NULL로 인식
 
 	while (getchar() != '\n'); // 없으면 버퍼에 남아있는((띄어쓰기)world(NULL)) 가 바로 출력됨
 	// getchar();

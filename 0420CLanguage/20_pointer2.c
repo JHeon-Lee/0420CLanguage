@@ -58,6 +58,8 @@ void pointer_arr()
 
 	//int a;
 	//scanf_s("%d", &a); 배열의 이름일땐 & 안들어감
+
+	// arr[i] = *(arr + i)
 }
 
 void pointer_operation()
