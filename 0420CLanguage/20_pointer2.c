@@ -14,7 +14,7 @@ int main()
 	// pointer_arr();
 	// pointer_operation();
 	// string_pointer();
-	pointer_arr_and_2d_arr();
+	   pointer_arr_and_2d_arr();
 	// pointer_and_const_arr();
 	// void_pointer();
 
@@ -152,9 +152,9 @@ void pointer_arr_and_2d_arr()
 
 		for (int i = 0; i < 2; i++)
 		{
-			for (int j = 0; j < 1; j++)
+			for (int j = 0; j < 3; j++)
 			{
-				printf("%d(== %d, %d) => 0x%p", ptrArr[i][j], *(ptrArr[i] + j), *(*(ptrArr + i)), &ptrArr[i][j]);
+				printf("%d(== %d, %d) => 0x%p\t", ptrArr[i][j], *(ptrArr[i] + j), *(*(ptrArr + i) + j), &ptrArr[i][j]);
 			}
 			printf("\n");
 		}
