@@ -37,7 +37,7 @@ void string()
 	char var2 = 0;
 	char var3 = '\0';
 
-	char notNyll = '0'; // 문자 0 --> 위에랑 다름
+	char notNull = '0'; // 문자 0 --> 위에랑 다름
 
 	{
 		char hello[] = { 'H','e','l' ,'l' ,'o' }; // --> 크기가 5로 잡힘
