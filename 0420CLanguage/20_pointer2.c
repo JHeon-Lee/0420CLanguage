@@ -48,7 +48,7 @@ void pointer_arr()
 	printf("%d %g\n", *arr1, *arr2);
 	printf("%d %g\n", arr1[0], arr2[0]);
 
-	//int* ptr = &arr[0];
+	//int* ptr = &arr1[0];
 	int* ptr = arr1; // À­ÁÙ°ú µ¿ÀÏ
 
 	printf("%d %d\n", ptr[0], arr1[0]);
