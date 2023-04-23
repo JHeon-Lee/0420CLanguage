@@ -135,11 +135,18 @@ void pointer_arr_and_2d_arr()
 	printf("0x%p\n", (&arr[1][0])); // 1행 0열의 주소
 	printf("\n");
 
-	printf("0x%p\n", &arr[0][1]);
+	printf("0x%p\n", &arr[0][1]); // 0행 1열
 	printf("0x%p\n", *arr + 1);
 	printf("0x%p\n", &arr[0][0] + 1);
 	printf("0x%p\n", arr[0] + 1);
 	printf("\n");
+
+	printf("0x%p\n", &arr[1][2]); // 1행 2열
+	printf("0x%p\n", *(arr + 1) + 2);
+	printf("0x%p\n", &arr[1][0] + 2);
+	printf("0x%p\n", arr[1] + 2);
+	printf("\n");
+
 	printf("%f\n\n", *(*(arr + 1) + 2)); // 1행 2열의 값
 
 	{
