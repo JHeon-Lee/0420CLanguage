@@ -14,7 +14,7 @@ int main()
 	// pointer_arr();
 	// pointer_operation();
 	// string_pointer();
-	   pointer_arr_and_2d_arr();
+	 pointer_arr_and_2d_arr();
 	// pointer_and_const_arr();
 	// void_pointer();
 
@@ -26,6 +26,7 @@ void pointer_arr()
 	int arr[3] = { 0,1,2 };
 
 	printf("배열의 이름 : %p\n", arr);
+	printf("배열의 이름 : %p\n", &arr);
 	printf("첫번째 요소 : %p\n", &arr[0]); // 배열의 이름과 동일
 	printf("두번째 요소 : %p\n", &arr[1]);
 	printf("세번째 요소 : %p\n", &arr[2]);
@@ -78,12 +79,15 @@ void pointer_operation()
 	int* ptr = arr;
 	printf("%d %d %d\n", *ptr, *(ptr + 1), *(ptr + 2));
 
-
 	printf("%d\n", *ptr); ptr++;
 	printf("%d\n", *ptr); ptr++;
 	printf("%d\n", *ptr); ptr--;
 	printf("%d\n", *ptr); ptr--;
 	printf("%d\n", *ptr);
+	printf("\n");
+	printf("%d\n", *arr); // arr++; --> 불가능
+	printf("%d\n", *(arr + 1));
+	printf("%d\n", *(arr + 2));
 }
 
 void string_pointer()
@@ -131,6 +135,11 @@ void pointer_arr_and_2d_arr()
 	printf("0x%p\n", (&arr[1][0])); // 1행 0열의 주소
 	printf("\n");
 
+	printf("0x%p\n", &arr[0][1]);
+	printf("0x%p\n", *arr + 1);
+	printf("0x%p\n", &arr[0][0] + 1);
+	printf("0x%p\n", arr[0] + 1);
+	printf("\n");
 	printf("%f\n\n", *(*(arr + 1) + 2)); // 1행 2열의 값
 
 	{
