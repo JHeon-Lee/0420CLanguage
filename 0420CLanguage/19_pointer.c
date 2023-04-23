@@ -32,7 +32,7 @@ int main()
 	printf("%p\n", pnum);
 	printf("%p\n", &num2);
 
-	int* ptr; // 초기화 안되면 쓰레기값 들어감 --> 초기화 반드시 필요
+	// int* ptr; 초기화 안되면 쓰레기값 들어감 --> 초기화 반드시 필요
 	int* ptr = NULL;
 	return 0;
 }
