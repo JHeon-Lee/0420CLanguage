@@ -26,7 +26,7 @@ void pointer_arr()
 	int arr[3] = { 0,1,2 };
 
 	printf("배열의 이름 : %p\n", arr);
-	printf("배열의 이름 : %p\n", &arr);
+	printf("배열의 주소 : %p\n", &arr);
 	printf("첫번째 요소 : %p\n", &arr[0]); // 배열의 이름과 동일
 	printf("두번째 요소 : %p\n", &arr[1]);
 	printf("세번째 요소 : %p\n", &arr[2]);
