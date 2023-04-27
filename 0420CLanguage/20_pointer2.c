@@ -14,9 +14,9 @@ int main()
 	// pointer_arr();
 	// pointer_operation();
 	// string_pointer();
-	 pointer_arr_and_2d_arr();
+	// pointer_arr_and_2d_arr();
 	// pointer_and_const_arr();
-	// void_pointer();
+	 void_pointer();
 
 	return 0;
 }
@@ -101,10 +101,12 @@ void string_pointer()
 	// printf("%s\n", pstr);
 
 	char* str1 = "Hello"; // 지정하는 포인터는 변경 가능하지만, 위처럼 인덱스를 사용해 변경하려면 에러남
-	printf("%s\n", str1);
+	printf("%s\n", str1); // Hello
+	printf("%c\n", *str1); // H
 
 	str1 = "bye";
-	printf("%s\n", str1);
+	printf("%s\n", str1); // bye
+	printf("%c\n", *str1); // b
 }
 
 void pointer_arr_and_2d_arr()
